@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fancik.travelb.MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/txt_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="081277890522"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/pilihtravelb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nohpb"
+        android:padding="10dp"
+        android:text="Pilih Travel"
+        android:textSize="18dp"/>
+
+    <!-- Nusa -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pilihtravelb"
+        android:id="@+id/cardnusa"
+        android:onClick="pilihnusa">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/nusa"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Nusa Travel"
+                android:src="@drawable/nusamulya"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_toRightOf="@+id/nusa"
+                android:text="Nusa Travel"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Annisa Prima -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardnusa"
+        android:id="@+id/cardanis"
+        android:onClick="pilihannisa">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tri"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Annisa Prima Travel"
+                android:src="@drawable/anis"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="38dp"
+                android:paddingTop="38dp"
+                android:paddingLeft="33dp"
+                android:layout_toRightOf="@+id/tri"
+                android:text="Annisa Prima"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Annisa Prima -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardanis"
+        android:id="@+id/cardsakti"
+        android:onClick="pilihtri">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sakti"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Tri Sakti Transport"
+                android:src="@drawable/sakti"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingLeft="30dp"
+                android:layout_toRightOf="@+id/sakti"
+                android:text="Tri Sakti Transport"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

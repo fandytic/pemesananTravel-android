@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fancik.travelb.MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/txt_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="081277890522"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nohp"
+        android:padding="10dp"
+        android:id="@+id/pilihtujuan"
+        android:text="Pilih Tujuan"
+        android:textSize="18dp"/>
+
+    <!-- Bukittinggi -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pilihtujuan"
+        android:id="@+id/cardbukittingi"
+        android:onClick="pilihtra">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bukittingi"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Bukittinggi"
+                android:src="@drawable/bukittinggi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="38sp"
+                android:layout_toRightOf="@id/bukittingi"
+                android:text="Bukittinggi"
+                android:textSize="30sp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Padang -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardbukittingi"
+        android:id="@+id/cardpadang"
+        android:onClick="travelPadang">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/padang"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Padang"
+                android:src="@drawable/padang"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="38dp"
+                android:layout_toRightOf="@id/padang"
+                android:text="Padang"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Padang Panjang -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardpadang"
+        android:id="@+id/cardpadangpanjang"
+        android:onClick="travelPadangPanjang">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/padangpanjang"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Padang Panjang"
+                android:src="@drawable/padangpanjang"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="21dp"
+                android:paddingLeft="35dp"
+                android:paddingBottom="21dp"
+                android:layout_toRightOf="@id/padangpanjang"
+                android:text="Padang Panjang"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Payakumbuh -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardpadangpanjang"
+        android:id="@+id/cardpayakumbuh"
+        android:onClick="travelpayakumbuh">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/payakumbuh"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Payakumbuh"
+                android:src="@drawable/payakumbuh"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="21dp"
+                android:paddingLeft="35dp"
+                android:paddingBottom="21dp"
+                android:layout_toRightOf="@id/payakumbuh"
+                android:text="Payakumbuh"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_below="@+id/cardpayakumbuh"
+        android:id="@+id/keluar"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="#448AFF"
+        android:textColor="#fff"
+        android:text="Keluar"
+        android:textStyle="bold" />
+</RelativeLayout>
+</ScrollView>

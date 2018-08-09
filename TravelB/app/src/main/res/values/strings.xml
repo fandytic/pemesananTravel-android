@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TravelB</string>
+
+    <string-array name="dropdown">
+        <item>Pilih Jam</item>
+        <item>Jam 7 Pagi</item>
+        <item>Jam 12 Siang</item>
+        <item>Jam 5 Sore</item>
+    </string-array>
+
+    <string-array name="duduk">
+        <item>Pilih Tempat Duduk</item>
+        <item>Depan</item>
+        <item>Tengah</item>
+        <item>Belakang</item>
+    </string-array>
+
+    <string-array name="ratting">
+        <item>Pilih Penilaian</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_maps_top_travel">Lokasi Top Travel</string>
+    <string name="title_activity_maps_tri_arga">Lokasi Tri Arga</string>
+    <string name="title_activity_maps_arya_wisata">Lokasi Arya Wisata</string>
+    <string name="title_activity_maps_nusa_mulya">Lokasi Nusa Mulya</string>
+    <string name="title_activity_maps_annisa">Lokasi Travel Annisa</string>
+    <string name="title_activity_maps_trisakti">Lokasi Travel Trisakti</string>
+    <string name="title_activity_maps_bintang_dham">Lokasi Travel Bintang Dhamasraya</string>
+    <string name="title_activity_maps_permata_pp">Lokasi Permata Padang Panjang</string>
+    <string name="title_activity_maps_bintang">Lokasi Travel Bintang</string>
+</resources>

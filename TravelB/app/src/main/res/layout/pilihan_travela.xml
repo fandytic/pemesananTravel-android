@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fancik.travelb.MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/txt_nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="081277890522"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/pilihtravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nohp"
+        android:padding="10dp"
+        android:text="Pilih Travel"
+        android:textSize="18dp"/>
+
+    <!-- Arya -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pilihtravel"
+        android:id="@+id/cardarya"
+        android:onClick="ChooseArya">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/arya"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Arya Travel"
+                android:src="@drawable/arya"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="36dp"
+                android:layout_toRightOf="@+id/arya"
+                android:text="Arya Travel"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Tri -->
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardarya"
+        android:id="@+id/cardtri"
+        android:onClick="ChooseTri">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tri"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:padding="10dp"
+                android:contentDescription="Tri Arga Travel"
+                android:src="@drawable/tri"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="36dp"
+                android:layout_toRightOf="@+id/tri"
+                android:text="Tri Arga"
+                android:textSize="30dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
